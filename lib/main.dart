@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:futproject/home/home_view.dart';
+import 'package:futproject/home/login.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,7 +11,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final ThemeData tema = ThemeData();
+    final ThemeData tema = ThemeData(fontFamily: 'Comfortaa');
 
     return MaterialApp(
         title: 'Flutter Demo',

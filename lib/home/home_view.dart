@@ -1,4 +1,6 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:futproject/home/login.dart';
 
 class HomeView extends StatefulWidget {
   const HomeView({Key? key}) : super(key: key);
@@ -8,17 +10,13 @@ class HomeView extends StatefulWidget {
 }
 
 class _HomeViewState extends State<HomeView> {
+  int current = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
         children: [
-          Image.asset(
-            "assets/imagens/img_inicial.png",
-            width: double.infinity,
-            fit: BoxFit.cover,
-            height: 664,
-          ),
+          carossa(context),
           const SizedBox(
             height: 20,
           ),
@@ -29,13 +27,14 @@ class _HomeViewState extends State<HomeView> {
                 width: 167,
                 height: 52,
                 child: OutlinedButton(
-                  style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all(Colors.white),
+                  // style: ButtonStyle(
+                  //   backgroundColor: MaterialStateProperty.all(Colors.white),
+                  // ),
+                  style: OutlinedButton.styleFrom(
+                    side: BorderSide(width: 3),
                   ),
                   child: Text("Entrar"),
-                  onPressed: () {
-                    print("object");
-                  },
+                  onPressed: () {},
                 ),
               ),
               const SizedBox(
@@ -46,13 +45,93 @@ class _HomeViewState extends State<HomeView> {
                 height: 52,
                 child: ElevatedButton(
                   child: const Text("Cadastro"),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const Login(),
+                      ),
+                    );
+                  },
                 ),
               ),
             ],
           ),
         ],
       ),
+    );
+  }
+
+  Widget carossa(BuildContext context) {
+    List<String> list = [
+      'assets/imagens/img_inicial.png',
+      'assets/imagens/img_inicial2.jpg'
+    ];
+    return Stack(
+      children: [
+        CarouselSlider(
+          options: CarouselOptions(
+            autoPlay: true,
+            viewportFraction: 1,
+            height: 664,
+            onPageChanged: (index, reason) {
+              setState(() {
+                current = index;
+              });
+            },
+          ),
+          items: list
+              .map(
+                (item) => Container(
+                  margin: EdgeInsets.zero,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      fit: BoxFit.cover,
+                      image: AssetImage(item),
+                    ),
+                  ),
+                ),
+              )
+              .toList(),
+        ),
+        Column(
+          children: [
+            const Padding(
+              padding: EdgeInsets.only(top: 570),
+              child: Text(
+                'Seja um campeão',
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold),
+              ),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                ...list.asMap().keys.map(
+                      (index) => Padding(
+                        padding: const EdgeInsets.only(top: 30, right: 8),
+                        child: Container(
+                          width: 25,
+                          height: 25,
+                          decoration: BoxDecoration(
+                            color: current == index
+                                ? Colors.black
+                                : Colors.transparent,
+                            border: Border.all(width: 2.0, color: Colors.black),
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(30.0),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+              ],
+            ),
+          ],
+        ),
+      ],
     );
   }
 }
