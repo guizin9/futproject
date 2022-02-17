@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:futproject/onboarding/Widgets/Input_widget.dart';
+import 'package:futproject/onboarding/cadastro02.dart';
 import 'Widgets/container.dart';
 import 'Widgets/imgFundo_widgets.dart';
 
@@ -28,6 +29,15 @@ class _CadastroState extends State<Cadastro> {
                 InputWidget(hintText: 'Insira seu e-mail'),
               ],
             ),
+            btn_text: 'Avançar',
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const CadastroDois(),
+                ),
+              );
+            },
           ),
         ],
       ),

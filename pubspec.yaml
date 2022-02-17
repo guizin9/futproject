@@ -63,6 +63,13 @@ flutter:
      - assets/imagens/img_inicial.png
      - assets/imagens/img_inicial2.jpg
      - assets/imagens/logo.jpg
+     - assets/imagens/icone.png
+     - assets/imagens/img_ney.jpeg
+     - assets/imagens/ronaldinho_10.jpeg
+     - assets/imagens/campdefutebol.png
+     - assets/imagens/marcelo.jpg
+     - assets/imagens/benzema.jpg
+
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

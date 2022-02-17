@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:futproject/home/home_view.dart';
-import 'package:futproject/home/login.dart';
+// ignore: unused_import
+import 'package:futproject/onboarding/cadastro.dart';
+
+import 'onboarding/onboarding_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,9 +19,10 @@ class MyApp extends StatelessWidget {
         title: 'Flutter Demo',
         debugShowCheckedModeBanner: false,
         theme: tema.copyWith(
-          colorScheme: tema.colorScheme
-              .copyWith(primary: Colors.black, secondary: Colors.white),
+          colorScheme: tema.colorScheme.copyWith(
+              primary: Color.fromARGB(255, 14, 0, 143),
+              secondary: Colors.white),
         ),
-        home: const HomeView());
+        home: const OnboardingView());
   }
 }

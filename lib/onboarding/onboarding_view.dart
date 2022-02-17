@@ -18,7 +18,7 @@ class _OnboardingViewState extends State<OnboardingView> {
         children: [
           carossa(context),
           const SizedBox(
-            height: 20,
+            height: 40,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -31,9 +31,11 @@ class _OnboardingViewState extends State<OnboardingView> {
                   //   backgroundColor: MaterialStateProperty.all(Colors.white),
                   // ),
                   style: OutlinedButton.styleFrom(
-                    side: BorderSide(width: 3),
+                    side: const BorderSide(
+                      width: 3,
+                    ),
                   ),
-                  child: Text("Entrar"),
+                  child: const Text("Entrar"),
                   onPressed: () {},
                 ),
               ),
@@ -66,7 +68,8 @@ class _OnboardingViewState extends State<OnboardingView> {
     List<String> list = [
       'assets/imagens/img_inicial.png',
       'assets/imagens/img_inicial2.jpg',
-      'assets/imagens/ronaldinho_10.jpeg',
+      'assets/imagens/marcelo.jpg',
+      'assets/imagens/benzema.jpg',
     ];
     return Stack(
       children: [
@@ -74,7 +77,7 @@ class _OnboardingViewState extends State<OnboardingView> {
           options: CarouselOptions(
             autoPlay: true,
             viewportFraction: 1,
-            height: 664,
+            height: 690,
             onPageChanged: (index, reason) {
               setState(() {
                 current = index;
@@ -118,10 +121,13 @@ class _OnboardingViewState extends State<OnboardingView> {
                           height: 25,
                           decoration: BoxDecoration(
                             color: current == index
-                                ? Colors.black
+                                ? const Color.fromARGB(129, 255, 255, 255)
                                 : Colors.transparent,
-                            border: Border.all(width: 2.0, color: Colors.black),
-                            borderRadius: BorderRadius.all(
+                            border: Border.all(
+                                width: 2.0,
+                                color:
+                                    const Color.fromARGB(255, 255, 255, 255)),
+                            borderRadius: const BorderRadius.all(
                               Radius.circular(30.0),
                             ),
                           ),
