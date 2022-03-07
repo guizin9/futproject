@@ -1,4 +1,4 @@
-#Thu Feb 17 11:55:30 BRT 2022
+#Fri Mar 04 14:02:24 BRT 2022
 base.0=/home/guilherme.novais@VALEMOBI.CORP/futproject/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

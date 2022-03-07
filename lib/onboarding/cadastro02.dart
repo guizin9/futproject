@@ -24,7 +24,7 @@ class _CadastroState extends State<CadastroDois> {
           const ImgFundoWidget(),
           ContainerWidget(
             widget: Column(
-              children: [
+              children: const [
                 InputWidget(hintText: 'Crie sua senha'),
                 InputWidget(hintText: 'Repita sua senha'),
               ],
@@ -38,6 +38,7 @@ class _CadastroState extends State<CadastroDois> {
                 ),
               );
             },
+            txtTitulo: 'Faça seu Cadastro',
           ),
         ],
       ),

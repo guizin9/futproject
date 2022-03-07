@@ -4,11 +4,16 @@ import '../cadastro02.dart';
 
 class ContainerWidget extends StatelessWidget {
   const ContainerWidget(
-      {Key? key, this.widget, required this.btn_text, this.onPressed})
+      {Key? key,
+      this.widget,
+      required this.btn_text,
+      this.onPressed,
+      required this.txtTitulo})
       : super(key: key);
   final Widget? widget;
   final String btn_text;
   final void Function()? onPressed;
+  final String txtTitulo;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -22,15 +27,16 @@ class ContainerWidget extends StatelessWidget {
         children: <Widget>[
           Row(
             children: [
-              const Padding(
+              Padding(
                 padding: EdgeInsets.only(),
-                child: Text(
-                  '   Faça seu Cadastro',
-                  style: TextStyle(
-                      color: Color.fromARGB(255, 116, 0, 131),
-                      fontSize: 25,
-                      fontWeight: FontWeight.bold),
-                ),
+                child: SizedBox(
+                    child: Padding(
+                  padding: const EdgeInsets.only(left: 20),
+                  child: Text(
+                    txtTitulo,
+                    style: TextStyle(fontSize: 25),
+                  ),
+                )),
               ),
               SizedBox(
                 child: Image.asset('assets/imagens/icone.png'),

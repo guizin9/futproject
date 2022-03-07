@@ -29,12 +29,15 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
+ 
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   carousel_slider: ^4.0.0
+  charts_flutter: ^0.12.0
+  line_chart: ^1.1.11
+  d_chart: ^0.0.4
 
 dev_dependencies:
   flutter_test:
@@ -69,7 +72,42 @@ flutter:
      - assets/imagens/campdefutebol.png
      - assets/imagens/marcelo.jpg
      - assets/imagens/benzema.jpg
-
+     - assets/imagens/fut.png
+     - assets/imagens/fut02.png
+     - assets/imagens/fut02-removebg-preview.png
+     - assets/imagens/treino.png
+     - assets/imagens/tatico.png
+     - assets/imagens/camisa10.png
+     - assets/imagens/agachamento.webp
+     - assets/imagens/extensora.gif
+     - assets/imagens/afundo.gif
+     - assets/imagens/terra.gif
+     - assets/imagens/mesaFlexora.webp
+     - assets/imagens/levantamentoDaPanturrilha.gif
+     - assets/imagens/abdominal.webp
+     - assets/imagens/prancha.gif
+     - assets/imagens/trote.gif
+     - assets/imagens/cerebro.png
+     - assets/imagens/supino.webp
+     - assets/imagens/roscaScott.gif
+     - assets/imagens/pullover.webp
+     - assets/imagens/rosca.webp
+     - assets/imagens/abdominal-obliquo-lateral-no-solo.webp
+     - assets/imagens/cone.gif
+     - assets/imagens/inconeCardio.png
+     - assets/imagens/corda.gif
+     - assets/imagens/corda02.gif
+     - assets/imagens/burpee.gif
+     - assets/imagens/salto.gif
+     - assets/imagens/alpinista.gif
+     - assets/imagens/drible.webp
+     - assets/imagens/embaixadinha.gif
+     - assets/imagens/cabecada.gif
+     - assets/imagens/passe.gif
+     - assets/imagens/arnold02.jpeg
+     - assets/imagens/usuario.png
+     - assets/imagens/incoUsuario.png
+     - assets/imagens/iconeUsuario.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

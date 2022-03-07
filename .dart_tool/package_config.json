@@ -32,6 +32,18 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "charts_common",
+      "rootUri": "file:///home/guilherme.novais@VALEMOBI.CORP/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/charts_common-0.12.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "charts_flutter",
+      "rootUri": "file:///home/guilherme.novais@VALEMOBI.CORP/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/charts_flutter-0.12.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "clock",
       "rootUri": "file:///home/guilherme.novais@VALEMOBI.CORP/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/clock-1.1.0",
       "packageUri": "lib/",
@@ -46,6 +58,12 @@
     {
       "name": "cupertino_icons",
       "rootUri": "file:///home/guilherme.novais@VALEMOBI.CORP/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/cupertino_icons-1.0.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "d_chart",
+      "rootUri": "file:///home/guilherme.novais@VALEMOBI.CORP/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/d_chart-0.0.4",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -74,8 +92,26 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "intl",
+      "rootUri": "file:///home/guilherme.novais@VALEMOBI.CORP/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/intl-0.17.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "line_chart",
+      "rootUri": "file:///home/guilherme.novais@VALEMOBI.CORP/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/line_chart-1.1.11",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "lints",
       "rootUri": "file:///home/guilherme.novais@VALEMOBI.CORP/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/lints-1.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "logging",
+      "rootUri": "file:///home/guilherme.novais@VALEMOBI.CORP/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/logging-1.0.2",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -164,7 +200,7 @@
       "languageVersion": "2.15"
     }
   ],
-  "generated": "2022-02-15T16:58:06.075997Z",
+  "generated": "2022-03-04T15:55:25.094426Z",
   "generator": "pub",
   "generatorVersion": "2.16.1"
 }

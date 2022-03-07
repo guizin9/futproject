@@ -24,7 +24,7 @@ class _CadastroState extends State<Cadastro> {
           const ImgFundoWidget(),
           ContainerWidget(
             widget: Column(
-              children: [
+              children: const [
                 InputWidget(hintText: 'Insira seu nome'),
                 InputWidget(hintText: 'Insira seu e-mail'),
               ],
@@ -38,6 +38,7 @@ class _CadastroState extends State<Cadastro> {
                 ),
               );
             },
+            txtTitulo: 'Faça seu Cadastro',
           ),
         ],
       ),

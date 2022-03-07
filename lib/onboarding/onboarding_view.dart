@@ -1,6 +1,8 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:futproject/onboarding/cadastro.dart';
+import 'package:futproject/onboarding/login.dart';
+import 'package:futproject/onboarding/posicao.dart';
 
 class OnboardingView extends StatefulWidget {
   const OnboardingView({Key? key}) : super(key: key);
@@ -14,52 +16,61 @@ class _OnboardingViewState extends State<OnboardingView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          carossa(context),
-          const SizedBox(
-            height: 40,
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              SizedBox(
-                width: 167,
-                height: 52,
-                child: OutlinedButton(
-                  // style: ButtonStyle(
-                  //   backgroundColor: MaterialStateProperty.all(Colors.white),
-                  // ),
-                  style: OutlinedButton.styleFrom(
-                    side: const BorderSide(
-                      width: 3,
-                    ),
-                  ),
-                  child: const Text("Entrar"),
-                  onPressed: () {},
-                ),
-              ),
-              const SizedBox(
-                width: 10,
-              ),
-              SizedBox(
-                width: 167,
-                height: 52,
-                child: ElevatedButton(
-                  child: const Text("Cadastro"),
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const Cadastro(),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            carossa(context),
+            const SizedBox(
+              height: 20,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                SizedBox(
+                  width: 167,
+                  height: 52,
+                  child: OutlinedButton(
+                    // style: ButtonStyle(
+                    //   backgroundColor: MaterialStateProperty.all(Colors.white),
+                    // ),
+                    style: OutlinedButton.styleFrom(
+                      side: const BorderSide(
+                        width: 3,
                       ),
-                    );
-                  },
+                    ),
+                    child: const Text("Entrar"),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const Login(),
+                        ),
+                      );
+                    },
+                  ),
                 ),
-              ),
-            ],
-          ),
-        ],
+                const SizedBox(
+                  width: 10,
+                ),
+                SizedBox(
+                  width: 167,
+                  height: 52,
+                  child: ElevatedButton(
+                    child: const Text("Cadastro"),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const Cadastro(),
+                        ),
+                      );
+                    },
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }

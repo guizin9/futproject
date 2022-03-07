@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         theme: tema.copyWith(
           colorScheme: tema.colorScheme.copyWith(
-              primary: Color.fromARGB(255, 14, 0, 143),
+              primary: const Color.fromARGB(255, 71, 0, 104),
               secondary: Colors.white),
         ),
         home: const OnboardingView());
